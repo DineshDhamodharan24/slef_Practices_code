@@ -1,0 +1,28 @@
+import random as rd
+class Maths:
+  def __init__(self,a,b):
+    self.a = a
+    self.b = b
+
+  def sums(self):
+    c = self.a +self.b
+    return print("Addition:",c)
+  def sub(self):
+    c = self.a -self.b
+    return print("Subration:",c)
+  def mul(self):
+    c = self.a * self.b
+    return print("Multipulaction:",c)
+  def dev(self):
+      if self.b == 0:
+          return "Division by zero is not allowed."
+      
+      result = round(self.a / self.b, 2)
+      print("Division:", result)
+a = rd.randint(1,100)
+b = rd.randint(1,100)
+obj = Maths(a,b)
+obj.sums()
+obj.sub()
+obj.mul()
+obj.dev()
